@@ -1,5 +1,5 @@
 #pragma once
-#include "../../Common/QwertyEmuns.h"
+#include "../../Common/QwertyEnums.h"
 #include "../../Common/QwertyTypes.h"
 #include <string>
 #include <vector>

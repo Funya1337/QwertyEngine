@@ -1,6 +1,7 @@
 #pragma once
 #include "../Types/Renderer/Mesh.h"
 #include "../Types/Renderer/Model.h"
+#include "../Types/Renderer/Texture.h"
 #include "../Common/QwertyTypes.h"
 #include "../API/OpenGL/GL_backEnd.h"
 #include "../BackEnd/BackEnd.h"
@@ -28,7 +29,9 @@ namespace AssetManager {
 	Model* CreateModel(const std::string& name);
 
 	// Textures
-	GLuint LoadTexture(const std::string& path);
+	std::vector<Texture>& getTextures();
+	void LoadPendingTexturesSync();
+	void LoadTexture(Texture* texture);
 
 	// Building
 	void BuildPrimitives();

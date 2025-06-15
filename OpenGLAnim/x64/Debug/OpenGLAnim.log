@@ -1,3 +1,5 @@
 ﻿  Scanning sources for module dependencies...
-  Util_file.cpp
+  AssetManager_texture.cpp
+  Texture.cpp
+  Generating Code...
   OpenGLAnim.vcxproj -> C:\Users\gta76\source\repos\OpenGLAnim\x64\Debug\OpenGLAnim.exe

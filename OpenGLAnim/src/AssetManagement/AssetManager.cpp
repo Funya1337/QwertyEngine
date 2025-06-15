@@ -4,6 +4,7 @@ namespace AssetManager {
 
 	std::vector<Mesh> g_meshes;
 	std::vector<Model> g_models;
+	std::vector<Texture> g_textures;
 
 	std::vector<Vertex> g_vertices;
 	std::vector<uint32_t> g_indices;
@@ -16,6 +17,7 @@ namespace AssetManager {
 	void Init()
 	{
 		FindAssetPaths();
+		LoadPendingTexturesSync();
 	}
 
 	void UpdateLoading()
@@ -45,15 +47,22 @@ namespace AssetManager {
 	{
 		// File all textures
 		for (FileInfo& fileInfo : Util::IterateDirectory("res/textures/uncompressed", { "png", "jpg" })) {
-			printf("------------------\n");
+			Texture& texture = g_textures.emplace_back();
+			texture.SetFileInfo(fileInfo);
+			texture.SetImageDataType(ImageDataType::UNCOMPRESSED);
+			texture.SetTextureWrapMode(TextureWrapMode::REPEAT);
+			texture.SetMinFilter(TextureFilter::LINEAR_MIPMAP);
+			texture.SetMagFilter(TextureFilter::LINEAR);
+			texture.RequestMipmaps();
+			//printf("------------------\n");
 
-			std::cout << "FileInfo\n";
-			std::cout << "Dir: " << fileInfo.dir << "\n";
-			std::cout << "Ext: " << fileInfo.ext << "\n";
-			std::cout << "Name: " << fileInfo.name << "\n";
-			std::cout << "Path: " << fileInfo.path << "\n";
+			//std::cout << "FileInfo\n";
+			//std::cout << "Dir: " << fileInfo.dir << "\n";
+			//std::cout << "Ext: " << fileInfo.ext << "\n";
+			//std::cout << "Name: " << fileInfo.name << "\n";
+			//std::cout << "Path: " << fileInfo.path << "\n";
 
-			printf("------------------\n");
+			//printf("------------------\n");
 		}
 		//printf("find asset paths function\n");
 	}
@@ -72,5 +81,9 @@ namespace AssetManager {
 	
 	std::vector<Model>& GetModels() {
 		return g_models;
+	}
+
+	std::vector<Texture>& getTextures() {
+		return g_textures;
 	}
 }

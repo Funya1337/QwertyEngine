@@ -1,6 +1,6 @@
 #pragma once
 #include "../../../Common/QwertyTypes.h"
-#include "../../../Common/QwertyEmuns.h"
+#include "../../../Common/QwertyEnums.h"
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <string>

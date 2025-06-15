@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\QwertyEnums.obj",
+            "outputs": [
+                "x64\\Debug\\QwertyEnums.h_F5568F7A533B8E94.ifc.dt.module.json",
+                "x64\\Debug\\QwertyEnums.h_F5568F7A533B8E94.ifc.dt.d.json",
+                "x64\\Debug\\QwertyEnums.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Users\\gta76\\source\\repos\\OpenGLAnim\\OpenGLAnim\\src\\Common\\QwertyEnums.h",
+                    "source-path": "c:\\users\\gta76\\source\\repos\\openglanim\\openglanim\\src\\common\\qwertyenums.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

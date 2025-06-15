@@ -149,13 +149,14 @@
     <ClCompile Include="glad.c" />
     <ClCompile Include="src\BackEnd\GLFWIntegration.cpp" />
     <ClCompile Include="src\Camera\Camera.cpp" />
-    <ClCompile Include="src\Common\QwertyEmuns.h" />
+    <ClCompile Include="src\Common\QwertyEnums.h" />
     <ClCompile Include="src\Config\Config.cpp" />
     <ClCompile Include="src\Core\Game.cpp" />
     <ClCompile Include="src\Input\Input.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Types\Renderer\Mesh.cpp" />
     <ClCompile Include="src\Types\Renderer\Model.cpp" />
+    <ClCompile Include="src\Types\Renderer\Texture.cpp" />
     <ClCompile Include="src\Utils\Util_file.cpp" />
     <ClCompile Include="src\Viewport\Viewport.cpp" />
   </ItemGroup>
@@ -176,6 +177,7 @@
     <ClInclude Include="src\Input\keycodes.h" />
     <ClInclude Include="src\Types\Renderer\Mesh.h" />
     <ClInclude Include="src\Types\Renderer\Model.h" />
+    <ClInclude Include="src\Types\Renderer\Texture.h" />
     <ClInclude Include="src\Utils\Util.h" />
     <ClInclude Include="src\Viewport\Viewport.h" />
   </ItemGroup>

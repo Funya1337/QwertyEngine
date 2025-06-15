@@ -1,6 +1,6 @@
 #pragma once
 #include "../Common/QwertyTypes.h"
-#include "../Common/QwertyEmuns.h"
+#include "../Common/QwertyEnums.h"
 
 namespace Game {
 	void Create();

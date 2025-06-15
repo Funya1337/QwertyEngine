@@ -24,7 +24,7 @@
     <ClCompile Include="src\BackEnd\BackEnd.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Common\QwertyEmuns.h">
+    <ClCompile Include="src\Common\QwertyEnums.h">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\BackEnd\GLFWIntegration.cpp">
@@ -84,6 +84,9 @@
     <ClCompile Include="src\Utils\Util_file.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Types\Renderer\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BackEnd\BackEnd.h">
@@ -138,6 +141,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Utils\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Types\Renderer\Texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

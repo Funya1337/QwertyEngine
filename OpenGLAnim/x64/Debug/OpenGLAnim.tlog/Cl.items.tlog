@@ -12,12 +12,13 @@ C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\src\BackEnd\BackEnd.cpp;C:\Use
 C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\glad.c;C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\x64\Debug\glad.obj
 C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\src\BackEnd\GLFWIntegration.cpp;C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\x64\Debug\GLFWIntegration.obj
 C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\src\Camera\Camera.cpp;C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\x64\Debug\Camera.obj
-C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\src\Common\QwertyEmuns.h;C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\x64\Debug\QwertyEmuns.h.obj
+C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\src\Common\QwertyEnums.h;C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\x64\Debug\QwertyEnums.h.obj
 C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\src\Config\Config.cpp;C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\x64\Debug\Config.obj
 C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\src\Core\Game.cpp;C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\x64\Debug\Game.obj
 C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\src\Input\Input.cpp;C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\x64\Debug\Input.obj
 C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\src\Main.cpp;C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\x64\Debug\Main.obj
 C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\src\Types\Renderer\Mesh.cpp;C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\x64\Debug\Mesh.obj
 C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\src\Types\Renderer\Model.cpp;C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\x64\Debug\Model.obj
+C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\src\Types\Renderer\Texture.cpp;C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\x64\Debug\Texture.obj
 C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\src\Utils\Util_file.cpp;C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\x64\Debug\Util_file.obj
 C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\src\Viewport\Viewport.cpp;C:\Users\gta76\source\repos\OpenGLAnim\OpenGLAnim\x64\Debug\Viewport.obj
