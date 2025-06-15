@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\Emuns.obj",
+            "outputs": [
+                "x64\\Debug\\Emuns.h_961C429927AC8118.ifc.dt.module.json",
+                "x64\\Debug\\Emuns.h_961C429927AC8118.ifc.dt.d.json",
+                "x64\\Debug\\Emuns.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Users\\gta76\\source\\repos\\OpenGLAnim\\OpenGLAnim\\src\\Common\\Emuns.h",
+                    "source-path": "c:\\users\\gta76\\source\\repos\\openglanim\\openglanim\\src\\common\\emuns.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

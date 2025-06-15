@@ -1,0 +1,11 @@
+#define QWERTY_KEY_0                  48
+#define QWERTY_KEY_1                  49
+#define QWERTY_KEY_2                  50
+#define QWERTY_KEY_3                  51
+#define QWERTY_KEY_4                  52
+#define QWERTY_KEY_5                  53
+#define QWERTY_KEY_6                  54
+#define QWERTY_KEY_7                  55
+#define QWERTY_KEY_8                  56
+#define QWERTY_KEY_9                  57
+#define QWERTY_KEY_H                  72

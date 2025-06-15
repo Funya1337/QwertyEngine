@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\QwertyEmuns.obj",
+            "outputs": [
+                "x64\\Debug\\QwertyEmuns.h_77888F63375C691C.ifc.dt.module.json",
+                "x64\\Debug\\QwertyEmuns.h_77888F63375C691C.ifc.dt.d.json",
+                "x64\\Debug\\QwertyEmuns.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Users\\gta76\\source\\repos\\OpenGLAnim\\OpenGLAnim\\src\\Common\\QwertyEmuns.h",
+                    "source-path": "c:\\users\\gta76\\source\\repos\\openglanim\\openglanim\\src\\common\\qwertyemuns.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
