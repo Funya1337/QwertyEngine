@@ -39,8 +39,8 @@ namespace OpenGLRenderer {
 
 		shader->Bind();
 		shader->SetInt("textureSampler", 0);
-		//glActiveTexture(GL_TEXTURE0);
-		//glBindTexture(GL_TEXTURE_2D, g_diffuseTexture);
+		glActiveTexture(GL_TEXTURE0);
+		glBindTexture(GL_TEXTURE_2D, AssetManager::GetTextureByIndex(1)->GetGLTexture().GetHandle());
 
 		glBindVertexArray(OpenGLBackEnd::GetVertexDataVAO());
 		glDrawElements(GL_TRIANGLES, OpenGLBackEnd::GetIndexCount(), GL_UNSIGNED_INT, (void*)0);

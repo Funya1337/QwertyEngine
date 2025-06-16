@@ -49,13 +49,13 @@ namespace GLFWIntegration {
         if (g_windowedMode == WindowedMode::WINDOWED) {
             g_currentWindowWidth = g_windowedWidth;
             g_currentWindowHeight = g_windowedHeight;
-            g_window = glfwCreateWindow(g_windowedWidth, g_windowedHeight, "Unloved", NULL, NULL);
+            g_window = glfwCreateWindow(g_windowedWidth, g_windowedHeight, "Headache", NULL, NULL);
             glfwSetWindowPos(g_window, 0, 0);
         }
         else if (windowedMode == WindowedMode::FULLSCREEN) {
             g_currentWindowWidth = g_fullscreenWidth;
             g_currentWindowHeight = g_fullscreenHeight;
-            g_window = glfwCreateWindow(g_fullscreenWidth, g_fullscreenHeight, "Unloved", g_monitor, NULL);
+            g_window = glfwCreateWindow(g_fullscreenWidth, g_fullscreenHeight, "Headache", g_monitor, NULL);
         }
         g_windowedMode = windowedMode;
         if (g_window == NULL) {

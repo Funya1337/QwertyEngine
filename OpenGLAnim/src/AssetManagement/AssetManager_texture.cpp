@@ -6,12 +6,21 @@ namespace AssetManager {
 
 
 	void LoadPendingTexturesSync() {
-		std::vector<Texture>& textures = getTextures();
+		std::vector<Texture>& textures = GetTextures();
 
 		for (Texture& texture : textures) {
 			if (texture.GetLoadingState() == LoadingState::AWAITING_LOADING_FROM_DISK) {
 				texture.SetLoadingState(LoadingState::LOADING_FROM_DISK);
 				LoadTexture(&texture);
+			}
+		}
+
+		for (Texture& texture : textures) {
+			if (BackEnd::GetAPI() == API::OPENGL) {
+				OpenGLBackEnd::AllocateTextureMemory(texture);
+			}
+			else if (BackEnd::GetAPI() == API::VULKAN) {
+				// VULKAN STUFF
 			}
 		}
 	}
@@ -25,6 +34,15 @@ namespace AssetManager {
 		if (texture) {
 			texture->Load();
 		}
+	}
+
+	Texture* GetTextureByIndex(int index) {
+		std::vector<Texture>& textures = GetTextures();
+		if (index != -1) {
+			return &textures[index];
+		}
+		std::cout << "AssetManager::GetTextureByIndex() failed because index was -1\n";
+		return nullptr;
 	}
 
 	//GLuint LoadTexture(const std::string& path) {

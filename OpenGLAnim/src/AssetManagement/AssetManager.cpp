@@ -50,7 +50,7 @@ namespace AssetManager {
 			Texture& texture = g_textures.emplace_back();
 			texture.SetFileInfo(fileInfo);
 			texture.SetImageDataType(ImageDataType::UNCOMPRESSED);
-			texture.SetTextureWrapMode(TextureWrapMode::REPEAT);
+			texture.SetTextureWrapMode(TextureWrapMode::CLAMP_TO_BORDER);
 			texture.SetMinFilter(TextureFilter::LINEAR_MIPMAP);
 			texture.SetMagFilter(TextureFilter::LINEAR);
 			texture.RequestMipmaps();
@@ -83,7 +83,7 @@ namespace AssetManager {
 		return g_models;
 	}
 
-	std::vector<Texture>& getTextures() {
+	std::vector<Texture>& GetTextures() {
 		return g_textures;
 	}
 }

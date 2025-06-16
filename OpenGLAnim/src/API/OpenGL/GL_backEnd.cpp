@@ -2,6 +2,7 @@
 #include "../../Common/QwertyTypes.h"
 #include "GL_backEnd.h"
 #include "../../BackEnd/GLFWIntegration.h"
+#include "GL_util.h"
 #include <string>
 #include <iostream>
 #include <vector>
@@ -48,6 +49,37 @@ namespace OpenGLBackEnd {
 
 		glClear(GL_COLOR_BUFFER_BIT);
 		glEnable(GL_DEPTH_TEST);
+	}
+
+	void AllocateTextureMemory(Texture& texture) {
+		OpenGLTexture& glTexture = texture.GetGLTexture();
+		GLuint& handle = glTexture.GetHandle();
+		if (handle != 0) {
+			return;
+		}
+		glGenTextures(1, &handle);
+		glBindTexture(GL_TEXTURE_2D, handle);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, OpenGLUtil::TextureWrapModeToGLEnum(texture.GetTextureWrapMode()));
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, OpenGLUtil::TextureWrapModeToGLEnum(texture.GetTextureWrapMode()));
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, OpenGLUtil::TextureFilterToGLEnum(texture.GetMinFilter()));
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, OpenGLUtil::TextureFilterToGLEnum(texture.GetMagFilter()));
+
+		if (texture.GetImageDataType() == ImageDataType::UNCOMPRESSED) {
+			printf("-------------------\n");
+			std::cout << "InternalFormat " << texture.GetInternalFormat() << std::endl;
+			std::cout << "Width " << texture.GetWidth(0) << std::endl;
+			std::cout << "Height " << texture.GetHeight(0) << std::endl;
+			std::cout << "Format " << texture.GetFormat() << std::endl;
+			printf("-------------------\n");
+
+			glTexImage2D(GL_TEXTURE_2D, 0, texture.GetInternalFormat(),
+				texture.GetWidth(0), texture.GetHeight(0), 0,
+				texture.GetFormat(), GL_UNSIGNED_BYTE, texture.GetTextureDataLevel0()->m_data);
+			glGenerateMipmap(GL_TEXTURE_2D);
+			//glTexImage2D(GL_TEXTURE_2D, 0, texture.GetInternalFormat(), texture.GetWidth(0), texture.GetHeight(0), 0, texture.GetFormat(), GL_UNSIGNED_BYTE, nullptr);
+		}
+
+		glBindTexture(GL_TEXTURE_2D, 0);
 	}
 
 	void UploadVertexData(std::vector<Vertex>& vertices, std::vector<unsigned int>& indices)

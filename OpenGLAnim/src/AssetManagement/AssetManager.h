@@ -29,9 +29,10 @@ namespace AssetManager {
 	Model* CreateModel(const std::string& name);
 
 	// Textures
-	std::vector<Texture>& getTextures();
+	std::vector<Texture>& GetTextures();
 	void LoadPendingTexturesSync();
 	void LoadTexture(Texture* texture);
+	Texture* GetTextureByIndex(int index);
 
 	// Building
 	void BuildPrimitives();
